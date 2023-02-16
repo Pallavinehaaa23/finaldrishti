@@ -55,7 +55,7 @@ const validateInputs=()=>{
    }
    if(pwdValue === '') {
        setError(password, '**password is required');
-   } else if (pwdValue>8 ) {
+   } else if (pwdValue.length>8 ) {
        setError(password, '**Password must not exceed 8 characters')
    } else {
        setSuccess(password);
